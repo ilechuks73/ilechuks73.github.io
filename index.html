@@ -35,13 +35,42 @@
             padding: 20px 0;
         }
     </style>
-    <script>
-        window.usabul = {
-          project: '66e16f38ed4b6392dce90a73',
-          source: "snippet"
-        };
-        document.addEventListener("DOMContentLoaded",(()=>{console.log(window.location);const root=document.createElement("div");root.setAttribute("id","usabul-widget-root");document.getElementsByTagName("body")[0].appendChild(root);const style=document.createElement("link");style.setAttribute("rel","stylesheet");style.setAttribute("href","https://staging.services.widget.usabul.com.ng/widget.min.css");document.head.appendChild(style);const script=document.createElement("script");script.setAttribute("src","https://staging.services.widget.usabul.com.ng/widget.min.js");document.head.appendChild(script)}));
-</script>
+     <script>
+      window.matta = {
+        vendor: "succy-nd-chams",
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log(window.location);
+        const root = document.createElement("div");
+        root.setAttribute("id", "matta-widget-root");
+        document.getElementsByTagName("body")[0].appendChild(root);
+
+        const style = document.createElement("link");
+        style.setAttribute("rel", "stylesheet");
+        style.setAttribute(
+          "href",
+          "https://res.cloudinary.com/geergregrgege/raw/upload/v1729204760/widget.css"
+        );
+        document.head.appendChild(style);
+        const script = document.createElement("script");
+        script.setAttribute(
+          "src",
+  "https://res.cloudinary.com/geergregrgege/raw/upload/v1729204832/widget.js"
+        );
+        script.type = "module";
+
+        const monnifyScript = document.createElement("script");
+        monnifyScript.setAttribute(
+          "src",
+          "https://sdk.monnify.com/plugin/monnify.js"
+        );
+
+        document.body.appendChild(script);
+        document.body.appendChild(monnifyScript);
+      });
+    </script>
+
 
 </head>
 
